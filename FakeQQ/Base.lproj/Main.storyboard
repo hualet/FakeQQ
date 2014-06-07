@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Root View Controller-->
+        <!--Messages Table View Controller - Root View Controller-->
         <scene sceneID="NKc-QY-svh">
             <objects>
-                <tableViewController id="4M1-oO-7qD" sceneMemberID="viewController">
+                <tableViewController id="4M1-oO-7qD" customClass="FQMessagesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Xkh-rn-Ucx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="-796" y="1220"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Table View Controller -  -->
         <scene sceneID="VdP-Fb-h5X">
             <objects>
-                <tableViewController id="jil-yk-1XX" sceneMemberID="viewController">
+                <tableViewController title=" " id="jil-yk-1XX" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LFj-2M-wJf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

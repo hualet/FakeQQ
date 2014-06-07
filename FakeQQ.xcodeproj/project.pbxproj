@@ -33,6 +33,7 @@
 		66AF35D81942FF6F00CFA15B /* tab_qworld_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D01942FF6F00CFA15B /* tab_qworld_press@2x.png */; };
 		66AF35D91942FF6F00CFA15B /* tab_recent_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D11942FF6F00CFA15B /* tab_recent_nor@2x.png */; };
 		66AF35DA1942FF6F00CFA15B /* tab_recent_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D21942FF6F00CFA15B /* tab_recent_press@2x.png */; };
+		66AF35DF1943105800CFA15B /* FQMessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35DE1943105800CFA15B /* FQMessagesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		66AF35D11942FF6F00CFA15B /* tab_recent_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_recent_nor@2x.png"; sourceTree = "<group>"; };
 		66AF35D21942FF6F00CFA15B /* tab_recent_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_recent_press@2x.png"; sourceTree = "<group>"; };
 		66AF35DC1943076700CFA15B /* FQTabViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQTabViewProtocol.h; sourceTree = "<group>"; };
+		66AF35DD1943105800CFA15B /* FQMessagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMessagesTableViewController.h; sourceTree = "<group>"; };
+		66AF35DE1943105800CFA15B /* FQMessagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMessagesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,8 @@
 				66AF35C51942FBC600CFA15B /* FQContactsViewController.m */,
 				66AF35C71942FBCF00CFA15B /* FQPresentsViewController.h */,
 				66AF35C81942FBCF00CFA15B /* FQPresentsViewController.m */,
+				66AF35DD1943105800CFA15B /* FQMessagesTableViewController.h */,
+				66AF35DE1943105800CFA15B /* FQMessagesTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AF35DF1943105800CFA15B /* FQMessagesTableViewController.m in Sources */,
 				66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */,
 				665267091942DEFF00658A16 /* main.m in Sources */,
 				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
