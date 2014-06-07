@@ -1,5 +1,5 @@
 //
-//  FQFirstViewController.h
+//  FQMainTabBarController.h
 //  FakeQQ
 //
 //  Created by hualet on 14/6/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FQFirstViewController : UIViewController
+@interface FQMainTabBarController : UITabBarController
 
 @end

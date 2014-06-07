@@ -14,14 +14,25 @@
 		665267091942DEFF00658A16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 665267081942DEFF00658A16 /* main.m */; };
 		6652670D1942DEFF00658A16 /* FQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652670C1942DEFF00658A16 /* FQAppDelegate.m */; };
 		665267101942DEFF00658A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6652670E1942DEFF00658A16 /* Main.storyboard */; };
-		665267131942DEFF00658A16 /* FQFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665267121942DEFF00658A16 /* FQFirstViewController.m */; };
-		665267161942DEFF00658A16 /* FQSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665267151942DEFF00658A16 /* FQSecondViewController.m */; };
 		665267181942DEFF00658A16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665267171942DEFF00658A16 /* Images.xcassets */; };
 		6652671F1942DEFF00658A16 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6652671E1942DEFF00658A16 /* XCTest.framework */; };
 		665267201942DEFF00658A16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665266FC1942DEFF00658A16 /* Foundation.framework */; };
 		665267211942DEFF00658A16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665267001942DEFF00658A16 /* UIKit.framework */; };
 		665267291942DEFF00658A16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 665267271942DEFF00658A16 /* InfoPlist.strings */; };
 		6652672B1942DEFF00658A16 /* FakeQQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652672A1942DEFF00658A16 /* FakeQQTests.m */; };
+		66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */; };
+		66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */; };
+		66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35C21942FBA300CFA15B /* FQMeViewController.m */; };
+		66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35C51942FBC600CFA15B /* FQContactsViewController.m */; };
+		66AF35C91942FBCF00CFA15B /* FQPresentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35C81942FBCF00CFA15B /* FQPresentsViewController.m */; };
+		66AF35D31942FF6F00CFA15B /* tab_buddy_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35CB1942FF6F00CFA15B /* tab_buddy_nor@2x.png */; };
+		66AF35D41942FF6F00CFA15B /* tab_buddy_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35CC1942FF6F00CFA15B /* tab_buddy_press@2x.png */; };
+		66AF35D51942FF6F00CFA15B /* tab_me_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35CD1942FF6F00CFA15B /* tab_me_nor@2x.png */; };
+		66AF35D61942FF6F00CFA15B /* tab_me_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35CE1942FF6F00CFA15B /* tab_me_press@2x.png */; };
+		66AF35D71942FF6F00CFA15B /* tab_qworld_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35CF1942FF6F00CFA15B /* tab_qworld_nor@2x.png */; };
+		66AF35D81942FF6F00CFA15B /* tab_qworld_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D01942FF6F00CFA15B /* tab_qworld_press@2x.png */; };
+		66AF35D91942FF6F00CFA15B /* tab_recent_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D11942FF6F00CFA15B /* tab_recent_nor@2x.png */; };
+		66AF35DA1942FF6F00CFA15B /* tab_recent_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D21942FF6F00CFA15B /* tab_recent_press@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +57,31 @@
 		6652670B1942DEFF00658A16 /* FQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQAppDelegate.h; sourceTree = "<group>"; };
 		6652670C1942DEFF00658A16 /* FQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQAppDelegate.m; sourceTree = "<group>"; };
 		6652670F1942DEFF00658A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		665267111942DEFF00658A16 /* FQFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQFirstViewController.h; sourceTree = "<group>"; };
-		665267121942DEFF00658A16 /* FQFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQFirstViewController.m; sourceTree = "<group>"; };
-		665267141942DEFF00658A16 /* FQSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQSecondViewController.h; sourceTree = "<group>"; };
-		665267151942DEFF00658A16 /* FQSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQSecondViewController.m; sourceTree = "<group>"; };
 		665267171942DEFF00658A16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6652671D1942DEFF00658A16 /* FakeQQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeQQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6652671E1942DEFF00658A16 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		665267261942DEFF00658A16 /* FakeQQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FakeQQTests-Info.plist"; sourceTree = "<group>"; };
 		665267281942DEFF00658A16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6652672A1942DEFF00658A16 /* FakeQQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeQQTests.m; sourceTree = "<group>"; };
+		66AF35B51942F99C00CFA15B /* FQMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMainTabBarController.h; sourceTree = "<group>"; };
+		66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMainTabBarController.m; sourceTree = "<group>"; };
+		66AF35B81942FB7200CFA15B /* FQMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMessagesViewController.h; sourceTree = "<group>"; };
+		66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMessagesViewController.m; sourceTree = "<group>"; };
+		66AF35C11942FBA300CFA15B /* FQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMeViewController.h; sourceTree = "<group>"; };
+		66AF35C21942FBA300CFA15B /* FQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMeViewController.m; sourceTree = "<group>"; };
+		66AF35C41942FBC600CFA15B /* FQContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQContactsViewController.h; sourceTree = "<group>"; };
+		66AF35C51942FBC600CFA15B /* FQContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQContactsViewController.m; sourceTree = "<group>"; };
+		66AF35C71942FBCF00CFA15B /* FQPresentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQPresentsViewController.h; sourceTree = "<group>"; };
+		66AF35C81942FBCF00CFA15B /* FQPresentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQPresentsViewController.m; sourceTree = "<group>"; };
+		66AF35CB1942FF6F00CFA15B /* tab_buddy_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_buddy_nor@2x.png"; sourceTree = "<group>"; };
+		66AF35CC1942FF6F00CFA15B /* tab_buddy_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_buddy_press@2x.png"; sourceTree = "<group>"; };
+		66AF35CD1942FF6F00CFA15B /* tab_me_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_me_nor@2x.png"; sourceTree = "<group>"; };
+		66AF35CE1942FF6F00CFA15B /* tab_me_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_me_press@2x.png"; sourceTree = "<group>"; };
+		66AF35CF1942FF6F00CFA15B /* tab_qworld_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_qworld_nor@2x.png"; sourceTree = "<group>"; };
+		66AF35D01942FF6F00CFA15B /* tab_qworld_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_qworld_press@2x.png"; sourceTree = "<group>"; };
+		66AF35D11942FF6F00CFA15B /* tab_recent_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_recent_nor@2x.png"; sourceTree = "<group>"; };
+		66AF35D21942FF6F00CFA15B /* tab_recent_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_recent_press@2x.png"; sourceTree = "<group>"; };
+		66AF35DC1943076700CFA15B /* FQTabViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQTabViewProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +141,11 @@
 		665267021942DEFF00658A16 /* FakeQQ */ = {
 			isa = PBXGroup;
 			children = (
+				66AF35CA1942FF3000CFA15B /* Resources */,
+				66AF35B31942F92A00CFA15B /* Classes */,
 				6652670B1942DEFF00658A16 /* FQAppDelegate.h */,
 				6652670C1942DEFF00658A16 /* FQAppDelegate.m */,
 				6652670E1942DEFF00658A16 /* Main.storyboard */,
-				665267111942DEFF00658A16 /* FQFirstViewController.h */,
-				665267121942DEFF00658A16 /* FQFirstViewController.m */,
-				665267141942DEFF00658A16 /* FQSecondViewController.h */,
-				665267151942DEFF00658A16 /* FQSecondViewController.m */,
 				665267171942DEFF00658A16 /* Images.xcassets */,
 				665267031942DEFF00658A16 /* Supporting Files */,
 			);
@@ -155,6 +179,55 @@
 				665267271942DEFF00658A16 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66AF35B31942F92A00CFA15B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				66AF35DB1943073D00CFA15B /* Protocols */,
+				66AF35B41942F96600CFA15B /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		66AF35B41942F96600CFA15B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66AF35B51942F99C00CFA15B /* FQMainTabBarController.h */,
+				66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */,
+				66AF35B81942FB7200CFA15B /* FQMessagesViewController.h */,
+				66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */,
+				66AF35C11942FBA300CFA15B /* FQMeViewController.h */,
+				66AF35C21942FBA300CFA15B /* FQMeViewController.m */,
+				66AF35C41942FBC600CFA15B /* FQContactsViewController.h */,
+				66AF35C51942FBC600CFA15B /* FQContactsViewController.m */,
+				66AF35C71942FBCF00CFA15B /* FQPresentsViewController.h */,
+				66AF35C81942FBCF00CFA15B /* FQPresentsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		66AF35CA1942FF3000CFA15B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66AF35CB1942FF6F00CFA15B /* tab_buddy_nor@2x.png */,
+				66AF35CC1942FF6F00CFA15B /* tab_buddy_press@2x.png */,
+				66AF35CD1942FF6F00CFA15B /* tab_me_nor@2x.png */,
+				66AF35CE1942FF6F00CFA15B /* tab_me_press@2x.png */,
+				66AF35CF1942FF6F00CFA15B /* tab_qworld_nor@2x.png */,
+				66AF35D01942FF6F00CFA15B /* tab_qworld_press@2x.png */,
+				66AF35D11942FF6F00CFA15B /* tab_recent_nor@2x.png */,
+				66AF35D21942FF6F00CFA15B /* tab_recent_press@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		66AF35DB1943073D00CFA15B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				66AF35DC1943076700CFA15B /* FQTabViewProtocol.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +307,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AF35D61942FF6F00CFA15B /* tab_me_press@2x.png in Resources */,
 				665267181942DEFF00658A16 /* Images.xcassets in Resources */,
+				66AF35D81942FF6F00CFA15B /* tab_qworld_press@2x.png in Resources */,
+				66AF35D31942FF6F00CFA15B /* tab_buddy_nor@2x.png in Resources */,
+				66AF35D51942FF6F00CFA15B /* tab_me_nor@2x.png in Resources */,
+				66AF35D91942FF6F00CFA15B /* tab_recent_nor@2x.png in Resources */,
 				665267071942DEFF00658A16 /* InfoPlist.strings in Resources */,
 				665267101942DEFF00658A16 /* Main.storyboard in Resources */,
+				66AF35DA1942FF6F00CFA15B /* tab_recent_press@2x.png in Resources */,
+				66AF35D41942FF6F00CFA15B /* tab_buddy_press@2x.png in Resources */,
+				66AF35D71942FF6F00CFA15B /* tab_qworld_nor@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */,
 				665267091942DEFF00658A16 /* main.m in Sources */,
-				665267161942DEFF00658A16 /* FQSecondViewController.m in Sources */,
-				665267131942DEFF00658A16 /* FQFirstViewController.m in Sources */,
+				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
+				66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */,
 				6652670D1942DEFF00658A16 /* FQAppDelegate.m in Sources */,
+				66AF35C91942FBCF00CFA15B /* FQPresentsViewController.m in Sources */,
+				66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +547,7 @@
 				665267301942DEFF00658A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		665267311942DEFF00658A16 /* Build configuration list for PBXNativeTarget "FakeQQTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +556,7 @@
 				665267331942DEFF00658A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
