@@ -23,7 +23,7 @@
 
 - (id)initWithTitle:(NSString*)title Image:(UIImage*)image
 {
-    self = [self initWithFrame:CGRectMake(0, 0, 80, 80)];
+    self = [self initWithFrame:CGRectMake(0, 0, 80, 60)];
     if (self) {
         _title = title;
         _image = image;
@@ -34,8 +34,11 @@
         [self setImage:_image forState:UIControlStateNormal];
         [self setImageEdgeInsets:UIEdgeInsetsMake(-(self.frame.size.height - _image.size.height) / 2, 0, (self.frame.size.height - _image.size.height) / 2, -titleSize.width)];
         [self setTitle:_title forState:UIControlStateNormal];
-        self.titleLabel.textColor = [UIColor redColor];
-        [self setTitleEdgeInsets:UIEdgeInsetsMake(_image.size.height - self.frame.size.height / 2 + titleSize.height / 2, -_image.size.width, 0, 0)];
+        [self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [self setTitleEdgeInsets:UIEdgeInsetsMake((self.frame.size.height - titleSize.height) / 2, -_image.size.width, 0, 0)];
+        
+        self.layer.borderWidth = 1;
+        self.layer.borderColor = [[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.1].CGColor;
     }
     return self;
 }
