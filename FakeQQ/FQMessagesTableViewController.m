@@ -10,6 +10,7 @@
 #import "FQArrowButton.h"
 #import "FQQuickBar.h"
 #import "FQQuickBarItem.h"
+#import "FQFriendBriefCell.h"
 
 @interface FQMessagesTableViewController ()
 
@@ -29,7 +30,7 @@
     _middleView.clipsToBounds = YES;
     _middleView.enabled = NO;
     _middleView.backgroundColor = [UIColor clearColor];
-    [_middleView addTarget:self action:@selector(middleViewClicked) forControlEvents:UIControlEventTouchDown];
+    [_middleView addTarget:self action:@selector(middleViewClicked) forControlEvents:UIControlEventAllEvents];
     [self.view addSubview:_middleView];
     
     // Customize Navigation Bar Appearences
@@ -63,6 +64,8 @@
 
 - (void)showQuickBar
 {
+//    CGRect middleViewFrame = _middleView.frame;
+//    _middleView.frame = CGRectMake(middleViewFrame.origin.x, ((UITableView*)self.view).contentOffset.y, middleViewFrame.size.width, middleViewFrame.size.height);
     _middleView.enabled = YES;
     _middleView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
     
@@ -108,28 +111,29 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 100;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+     FQFriendBriefCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recent_message_cell" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.friendAvatar.image = [UIImage imageNamed:@"qq_icon"];
+    cell.friendAvatar.layer.masksToBounds = YES;
+    cell.friendAvatar.layer.cornerRadius = 8.0;
+    cell.friendNick.text = @"王耀华";
+    cell.friendPresent.text = @"我是程序员";
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

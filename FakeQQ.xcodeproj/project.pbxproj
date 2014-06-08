@@ -24,6 +24,8 @@
 		6654F8CA19441C7E0063AE28 /* menu_icon_chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C619441C7E0063AE28 /* menu_icon_chat@2x.png */; };
 		6654F8CB19441C7E0063AE28 /* menu_icon_groupaudio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C719441C7E0063AE28 /* menu_icon_groupaudio@2x.png */; };
 		6654F8CC19441C7E0063AE28 /* menu_icon_QR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C819441C7E0063AE28 /* menu_icon_QR@2x.png */; };
+		6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */; };
+		6654F8D31944536C0063AE28 /* qq_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8D21944536C0063AE28 /* qq_icon@2x.png */; };
 		66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */; };
 		66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */; };
 		66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35C21942FBA300CFA15B /* FQMeViewController.m */; };
@@ -77,6 +79,9 @@
 		6654F8C619441C7E0063AE28 /* menu_icon_chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_chat@2x.png"; sourceTree = "<group>"; };
 		6654F8C719441C7E0063AE28 /* menu_icon_groupaudio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_groupaudio@2x.png"; sourceTree = "<group>"; };
 		6654F8C819441C7E0063AE28 /* menu_icon_QR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_QR@2x.png"; sourceTree = "<group>"; };
+		6654F8CD194442A40063AE28 /* FQFriendBriefCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQFriendBriefCell.h; sourceTree = "<group>"; };
+		6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQFriendBriefCell.m; sourceTree = "<group>"; };
+		6654F8D21944536C0063AE28 /* qq_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq_icon@2x.png"; sourceTree = "<group>"; };
 		66AF35B51942F99C00CFA15B /* FQMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMainTabBarController.h; sourceTree = "<group>"; };
 		66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMainTabBarController.m; sourceTree = "<group>"; };
 		66AF35B81942FB7200CFA15B /* FQMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMessagesViewController.h; sourceTree = "<group>"; };
@@ -237,6 +242,7 @@
 		66AF35CA1942FF3000CFA15B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6654F8D21944536C0063AE28 /* qq_icon@2x.png */,
 				6654F8C519441C7E0063AE28 /* menu_icon_camera@2x.png */,
 				6654F8C619441C7E0063AE28 /* menu_icon_chat@2x.png */,
 				6654F8C719441C7E0063AE28 /* menu_icon_groupaudio@2x.png */,
@@ -272,6 +278,8 @@
 				66D1D58F19432342007DA483 /* FQQuickBar.m */,
 				66D1D591194324A9007DA483 /* FQQuickBarItem.h */,
 				66D1D592194324A9007DA483 /* FQQuickBarItem.m */,
+				6654F8CD194442A40063AE28 /* FQFriendBriefCell.h */,
+				6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 			files = (
 				66AF35D61942FF6F00CFA15B /* tab_me_press@2x.png in Resources */,
 				665267181942DEFF00658A16 /* Images.xcassets in Resources */,
+				6654F8D31944536C0063AE28 /* qq_icon@2x.png in Resources */,
 				66AF35D81942FF6F00CFA15B /* tab_qworld_press@2x.png in Resources */,
 				6654F8CB19441C7E0063AE28 /* menu_icon_groupaudio@2x.png in Resources */,
 				6654F8CC19441C7E0063AE28 /* menu_icon_QR@2x.png in Resources */,
@@ -393,6 +402,7 @@
 				665267091942DEFF00658A16 /* main.m in Sources */,
 				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
 				66AF35E21943184100CFA15B /* FQArrowButton.m in Sources */,
+				6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */,
 				66D1D593194324A9007DA483 /* FQQuickBarItem.m in Sources */,
 				66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */,
 				66D1D59019432342007DA483 /* FQQuickBar.m in Sources */,
