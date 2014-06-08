@@ -22,17 +22,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"消息";
     
     CGSize wholeViewFrameSize = self.view.frame.size;
     
     // Init Middle View, which is used as the container of the quick bar.
-    _middleView = [[UIControl alloc] initWithFrame:CGRectMake(0, 0, wholeViewFrameSize.width, wholeViewFrameSize.height)];
+    // NOTE: the middle view is added to the super view of the navigation bar.
+    CGFloat navigationBarHeight = self.navigationController.navigationBar.frame.size.height;
+    CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    _middleView = [[UIControl alloc] initWithFrame:CGRectMake(0, navigationBarHeight + statusBarHeight + 1, wholeViewFrameSize.width, wholeViewFrameSize.height)];
     _middleView.clipsToBounds = YES;
     _middleView.enabled = NO;
     _middleView.backgroundColor = [UIColor clearColor];
     [_middleView addTarget:self action:@selector(middleViewClicked) forControlEvents:UIControlEventAllEvents];
-    [self.view addSubview:_middleView];
+    [self.navigationController.navigationBar.superview addSubview:_middleView];
     
     // Customize Navigation Bar Appearences
     UISegmentedControl* messageCallsSeg = [[UISegmentedControl alloc] initWithItems:@[@"消息", @"通话"]];
@@ -70,8 +72,6 @@
 
 - (void)showQuickBar
 {
-//    CGRect middleViewFrame = _middleView.frame;
-//    _middleView.frame = CGRectMake(middleViewFrame.origin.x, ((UITableView*)self.view).contentOffset.y, middleViewFrame.size.width, middleViewFrame.size.height);
     _middleView.enabled = YES;
     _middleView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
     
