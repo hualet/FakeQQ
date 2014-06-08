@@ -11,6 +11,7 @@
 #import "FQQuickBar.h"
 #import "FQQuickBarItem.h"
 #import "FQFriendBriefCell.h"
+#import "FQChatViewControllerTableViewController.h"
 
 @interface FQMessagesTableViewController ()
 
@@ -54,6 +55,11 @@
     _quickBar.items = @[_item1, _item2, _item3, _item4];
     _quickBar.delegate = self;
     [_middleView addSubview:_quickBar];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -173,7 +179,16 @@
 }
 */
 
-/*
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FQFriendBriefCell* cell = (FQFriendBriefCell*)[tableView cellForRowAtIndexPath:indexPath];
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:cell.friendNick.text style:UIBarButtonItemStyleBordered target:nil action:nil];
+    [self.navigationItem setBackBarButtonItem:backItem];
+    
+    return indexPath;
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -181,7 +196,10 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    self.hidesBottomBarWhenPushed = YES;
+    
+    UITableViewController* dest = segue.destinationViewController;
+    dest.title = self.navigationItem.backBarButtonItem.title;
 }
-*/
 
 @end

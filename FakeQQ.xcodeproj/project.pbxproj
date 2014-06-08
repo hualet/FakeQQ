@@ -26,6 +26,7 @@
 		6654F8CC19441C7E0063AE28 /* menu_icon_QR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C819441C7E0063AE28 /* menu_icon_QR@2x.png */; };
 		6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */; };
 		6654F8D31944536C0063AE28 /* qq_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8D21944536C0063AE28 /* qq_icon@2x.png */; };
+		6654F8D919445EE30063AE28 /* FQChatViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */; };
 		66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */; };
 		66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */; };
 		66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35C21942FBA300CFA15B /* FQMeViewController.m */; };
@@ -82,6 +83,8 @@
 		6654F8CD194442A40063AE28 /* FQFriendBriefCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQFriendBriefCell.h; sourceTree = "<group>"; };
 		6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQFriendBriefCell.m; sourceTree = "<group>"; };
 		6654F8D21944536C0063AE28 /* qq_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq_icon@2x.png"; sourceTree = "<group>"; };
+		6654F8D719445EE30063AE28 /* FQChatViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQChatViewControllerTableViewController.h; sourceTree = "<group>"; };
+		6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQChatViewControllerTableViewController.m; sourceTree = "<group>"; };
 		66AF35B51942F99C00CFA15B /* FQMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMainTabBarController.h; sourceTree = "<group>"; };
 		66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMainTabBarController.m; sourceTree = "<group>"; };
 		66AF35B81942FB7200CFA15B /* FQMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMessagesViewController.h; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				66AF35C81942FBCF00CFA15B /* FQPresentsViewController.m */,
 				66AF35DD1943105800CFA15B /* FQMessagesTableViewController.h */,
 				66AF35DE1943105800CFA15B /* FQMessagesTableViewController.m */,
+				6654F8D719445EE30063AE28 /* FQChatViewControllerTableViewController.h */,
+				6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 				665267091942DEFF00658A16 /* main.m in Sources */,
 				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
 				66AF35E21943184100CFA15B /* FQArrowButton.m in Sources */,
+				6654F8D919445EE30063AE28 /* FQChatViewControllerTableViewController.m in Sources */,
 				6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */,
 				66D1D593194324A9007DA483 /* FQQuickBarItem.m in Sources */,
 				66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */,
