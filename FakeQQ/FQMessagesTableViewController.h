@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FQQuickBar.h"
+@class FQArrowButton;
 
-@interface FQMessagesTableViewController : UITableViewController
+@interface FQMessagesTableViewController : UITableViewController <FQQuickBarDelegate> {
+    FQArrowButton* _arrowButton;
+    FQQuickBar* _quickBar;
+    UIControl* _middleView;
+    
+    FQQuickBarItem* _item1;
+    FQQuickBarItem* _item2;
+    FQQuickBarItem* _item3;
+    FQQuickBarItem* _item4;
+}
 
 @end

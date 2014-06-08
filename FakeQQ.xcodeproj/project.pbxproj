@@ -20,6 +20,10 @@
 		665267211942DEFF00658A16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665267001942DEFF00658A16 /* UIKit.framework */; };
 		665267291942DEFF00658A16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 665267271942DEFF00658A16 /* InfoPlist.strings */; };
 		6652672B1942DEFF00658A16 /* FakeQQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652672A1942DEFF00658A16 /* FakeQQTests.m */; };
+		6654F8C919441C7E0063AE28 /* menu_icon_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C519441C7E0063AE28 /* menu_icon_camera@2x.png */; };
+		6654F8CA19441C7E0063AE28 /* menu_icon_chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C619441C7E0063AE28 /* menu_icon_chat@2x.png */; };
+		6654F8CB19441C7E0063AE28 /* menu_icon_groupaudio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C719441C7E0063AE28 /* menu_icon_groupaudio@2x.png */; };
+		6654F8CC19441C7E0063AE28 /* menu_icon_QR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C819441C7E0063AE28 /* menu_icon_QR@2x.png */; };
 		66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */; };
 		66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */; };
 		66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35C21942FBA300CFA15B /* FQMeViewController.m */; };
@@ -34,6 +38,11 @@
 		66AF35D91942FF6F00CFA15B /* tab_recent_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D11942FF6F00CFA15B /* tab_recent_nor@2x.png */; };
 		66AF35DA1942FF6F00CFA15B /* tab_recent_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35D21942FF6F00CFA15B /* tab_recent_press@2x.png */; };
 		66AF35DF1943105800CFA15B /* FQMessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35DE1943105800CFA15B /* FQMessagesTableViewController.m */; };
+		66AF35E21943184100CFA15B /* FQArrowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35E11943184100CFA15B /* FQArrowButton.m */; };
+		66AF35E51943189000CFA15B /* menu_icon_bulb_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35E31943189000CFA15B /* menu_icon_bulb_pressed@2x.png */; };
+		66AF35E61943189000CFA15B /* menu_icon_bulb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35E41943189000CFA15B /* menu_icon_bulb@2x.png */; };
+		66D1D59019432342007DA483 /* FQQuickBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D58F19432342007DA483 /* FQQuickBar.m */; };
+		66D1D593194324A9007DA483 /* FQQuickBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D592194324A9007DA483 /* FQQuickBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +73,10 @@
 		665267261942DEFF00658A16 /* FakeQQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FakeQQTests-Info.plist"; sourceTree = "<group>"; };
 		665267281942DEFF00658A16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6652672A1942DEFF00658A16 /* FakeQQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeQQTests.m; sourceTree = "<group>"; };
+		6654F8C519441C7E0063AE28 /* menu_icon_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_camera@2x.png"; sourceTree = "<group>"; };
+		6654F8C619441C7E0063AE28 /* menu_icon_chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_chat@2x.png"; sourceTree = "<group>"; };
+		6654F8C719441C7E0063AE28 /* menu_icon_groupaudio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_groupaudio@2x.png"; sourceTree = "<group>"; };
+		6654F8C819441C7E0063AE28 /* menu_icon_QR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_QR@2x.png"; sourceTree = "<group>"; };
 		66AF35B51942F99C00CFA15B /* FQMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMainTabBarController.h; sourceTree = "<group>"; };
 		66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMainTabBarController.m; sourceTree = "<group>"; };
 		66AF35B81942FB7200CFA15B /* FQMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMessagesViewController.h; sourceTree = "<group>"; };
@@ -85,6 +98,14 @@
 		66AF35DC1943076700CFA15B /* FQTabViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQTabViewProtocol.h; sourceTree = "<group>"; };
 		66AF35DD1943105800CFA15B /* FQMessagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMessagesTableViewController.h; sourceTree = "<group>"; };
 		66AF35DE1943105800CFA15B /* FQMessagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMessagesTableViewController.m; sourceTree = "<group>"; };
+		66AF35E01943184100CFA15B /* FQArrowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQArrowButton.h; sourceTree = "<group>"; };
+		66AF35E11943184100CFA15B /* FQArrowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQArrowButton.m; sourceTree = "<group>"; };
+		66AF35E31943189000CFA15B /* menu_icon_bulb_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_bulb_pressed@2x.png"; sourceTree = "<group>"; };
+		66AF35E41943189000CFA15B /* menu_icon_bulb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_bulb@2x.png"; sourceTree = "<group>"; };
+		66D1D58E19432342007DA483 /* FQQuickBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQQuickBar.h; sourceTree = "<group>"; };
+		66D1D58F19432342007DA483 /* FQQuickBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQQuickBar.m; sourceTree = "<group>"; };
+		66D1D591194324A9007DA483 /* FQQuickBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQQuickBarItem.h; sourceTree = "<group>"; };
+		66D1D592194324A9007DA483 /* FQQuickBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQQuickBarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +208,7 @@
 		66AF35B31942F92A00CFA15B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66AF35E719431A6500CFA15B /* Views */,
 				66AF35DB1943073D00CFA15B /* Protocols */,
 				66AF35B41942F96600CFA15B /* Controllers */,
 			);
@@ -215,6 +237,12 @@
 		66AF35CA1942FF3000CFA15B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6654F8C519441C7E0063AE28 /* menu_icon_camera@2x.png */,
+				6654F8C619441C7E0063AE28 /* menu_icon_chat@2x.png */,
+				6654F8C719441C7E0063AE28 /* menu_icon_groupaudio@2x.png */,
+				6654F8C819441C7E0063AE28 /* menu_icon_QR@2x.png */,
+				66AF35E31943189000CFA15B /* menu_icon_bulb_pressed@2x.png */,
+				66AF35E41943189000CFA15B /* menu_icon_bulb@2x.png */,
 				66AF35CB1942FF6F00CFA15B /* tab_buddy_nor@2x.png */,
 				66AF35CC1942FF6F00CFA15B /* tab_buddy_press@2x.png */,
 				66AF35CD1942FF6F00CFA15B /* tab_me_nor@2x.png */,
@@ -233,6 +261,19 @@
 				66AF35DC1943076700CFA15B /* FQTabViewProtocol.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		66AF35E719431A6500CFA15B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66AF35E01943184100CFA15B /* FQArrowButton.h */,
+				66AF35E11943184100CFA15B /* FQArrowButton.m */,
+				66D1D58E19432342007DA483 /* FQQuickBar.h */,
+				66D1D58F19432342007DA483 /* FQQuickBar.m */,
+				66D1D591194324A9007DA483 /* FQQuickBarItem.h */,
+				66D1D592194324A9007DA483 /* FQQuickBarItem.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,14 +356,20 @@
 				66AF35D61942FF6F00CFA15B /* tab_me_press@2x.png in Resources */,
 				665267181942DEFF00658A16 /* Images.xcassets in Resources */,
 				66AF35D81942FF6F00CFA15B /* tab_qworld_press@2x.png in Resources */,
+				6654F8CB19441C7E0063AE28 /* menu_icon_groupaudio@2x.png in Resources */,
+				6654F8CC19441C7E0063AE28 /* menu_icon_QR@2x.png in Resources */,
 				66AF35D31942FF6F00CFA15B /* tab_buddy_nor@2x.png in Resources */,
 				66AF35D51942FF6F00CFA15B /* tab_me_nor@2x.png in Resources */,
 				66AF35D91942FF6F00CFA15B /* tab_recent_nor@2x.png in Resources */,
 				665267071942DEFF00658A16 /* InfoPlist.strings in Resources */,
 				665267101942DEFF00658A16 /* Main.storyboard in Resources */,
+				66AF35E51943189000CFA15B /* menu_icon_bulb_pressed@2x.png in Resources */,
 				66AF35DA1942FF6F00CFA15B /* tab_recent_press@2x.png in Resources */,
+				6654F8CA19441C7E0063AE28 /* menu_icon_chat@2x.png in Resources */,
 				66AF35D41942FF6F00CFA15B /* tab_buddy_press@2x.png in Resources */,
+				66AF35E61943189000CFA15B /* menu_icon_bulb@2x.png in Resources */,
 				66AF35D71942FF6F00CFA15B /* tab_qworld_nor@2x.png in Resources */,
+				6654F8C919441C7E0063AE28 /* menu_icon_camera@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +392,10 @@
 				66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */,
 				665267091942DEFF00658A16 /* main.m in Sources */,
 				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
+				66AF35E21943184100CFA15B /* FQArrowButton.m in Sources */,
+				66D1D593194324A9007DA483 /* FQQuickBarItem.m in Sources */,
 				66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */,
+				66D1D59019432342007DA483 /* FQQuickBar.m in Sources */,
 				6652670D1942DEFF00658A16 /* FQAppDelegate.m in Sources */,
 				66AF35C91942FBCF00CFA15B /* FQPresentsViewController.m in Sources */,
 				66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */,
