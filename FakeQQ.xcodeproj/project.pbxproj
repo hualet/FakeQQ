@@ -47,6 +47,8 @@
 		66AF35E61943189000CFA15B /* menu_icon_bulb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AF35E41943189000CFA15B /* menu_icon_bulb@2x.png */; };
 		66D1D59019432342007DA483 /* FQQuickBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D58F19432342007DA483 /* FQQuickBar.m */; };
 		66D1D593194324A9007DA483 /* FQQuickBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D592194324A9007DA483 /* FQQuickBarItem.m */; };
+		66EBE7E6194B393000BA19A1 /* FQStatusNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EBE7E5194B393000BA19A1 /* FQStatusNotifications.m */; };
+		66EBE7E8194B43DD00BA19A1 /* prompt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EBE7E7194B43DD00BA19A1 /* prompt@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,9 @@
 		66D1D58F19432342007DA483 /* FQQuickBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQQuickBar.m; sourceTree = "<group>"; };
 		66D1D591194324A9007DA483 /* FQQuickBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQQuickBarItem.h; sourceTree = "<group>"; };
 		66D1D592194324A9007DA483 /* FQQuickBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQQuickBarItem.m; sourceTree = "<group>"; };
+		66EBE7E4194B393000BA19A1 /* FQStatusNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQStatusNotifications.h; sourceTree = "<group>"; };
+		66EBE7E5194B393000BA19A1 /* FQStatusNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQStatusNotifications.m; sourceTree = "<group>"; };
+		66EBE7E7194B43DD00BA19A1 /* prompt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "prompt@2x.png"; path = "../../HaveATry/QQ 4.7.1/Payload/QQ.app-content/resource/Default/prompt@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +265,7 @@
 		66AF35CA1942FF3000CFA15B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				66EBE7E7194B43DD00BA19A1 /* prompt@2x.png */,
 				6654F8D21944536C0063AE28 /* qq_icon@2x.png */,
 				6654F8C519441C7E0063AE28 /* menu_icon_camera@2x.png */,
 				6654F8C619441C7E0063AE28 /* menu_icon_chat@2x.png */,
@@ -298,6 +304,8 @@
 				66D1D592194324A9007DA483 /* FQQuickBarItem.m */,
 				6654F8CD194442A40063AE28 /* FQFriendBriefCell.h */,
 				6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */,
+				66EBE7E4194B393000BA19A1 /* FQStatusNotifications.h */,
+				66EBE7E5194B393000BA19A1 /* FQStatusNotifications.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -395,6 +403,7 @@
 				6654F8CA19441C7E0063AE28 /* menu_icon_chat@2x.png in Resources */,
 				66AF35D41942FF6F00CFA15B /* tab_buddy_press@2x.png in Resources */,
 				66AF35E61943189000CFA15B /* menu_icon_bulb@2x.png in Resources */,
+				66EBE7E8194B43DD00BA19A1 /* prompt@2x.png in Resources */,
 				66AF35D71942FF6F00CFA15B /* tab_qworld_nor@2x.png in Resources */,
 				6654F8C919441C7E0063AE28 /* menu_icon_camera@2x.png in Resources */,
 			);
@@ -420,6 +429,7 @@
 				6654F8DD194473DA0063AE28 /* FQQMessage.m in Sources */,
 				665267091942DEFF00658A16 /* main.m in Sources */,
 				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
+				66EBE7E6194B393000BA19A1 /* FQStatusNotifications.m in Sources */,
 				66AF35E21943184100CFA15B /* FQArrowButton.m in Sources */,
 				6654F8D919445EE30063AE28 /* FQChatViewControllerTableViewController.m in Sources */,
 				6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */,

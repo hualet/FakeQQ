@@ -7,6 +7,7 @@
 //
 
 #import "FQMeViewController.h"
+#import "FQStatusNotifications.h"
 
 @interface FQMeViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [FQStatusNotifications showWithNick:@"hello" count:2];
 }
 
 - (void)didReceiveMemoryWarning
