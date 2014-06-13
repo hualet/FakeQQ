@@ -1,15 +1,13 @@
 //
-//  FQTabViewProtocol.h
+//  FQQMessage.h
 //  FakeQQ
 //
-//  Created by hualet on 14/6/7.
+//  Created by hualet on 14/6/8.
 //  Copyright (c) 2014年 Hualet. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@protocol FQTabViewProtocol <NSObject>
-
-- (void)initAssets;
+@interface FQQMessage : NSObject
 
 @end

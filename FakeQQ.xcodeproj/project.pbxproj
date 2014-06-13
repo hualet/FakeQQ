@@ -27,6 +27,7 @@
 		6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */; };
 		6654F8D31944536C0063AE28 /* qq_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8D21944536C0063AE28 /* qq_icon@2x.png */; };
 		6654F8D919445EE30063AE28 /* FQChatViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */; };
+		6654F8DD194473DA0063AE28 /* FQQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8DC194473DA0063AE28 /* FQQMessage.m */; };
 		66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */; };
 		66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */; };
 		66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35C21942FBA300CFA15B /* FQMeViewController.m */; };
@@ -85,6 +86,8 @@
 		6654F8D21944536C0063AE28 /* qq_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq_icon@2x.png"; sourceTree = "<group>"; };
 		6654F8D719445EE30063AE28 /* FQChatViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQChatViewControllerTableViewController.h; sourceTree = "<group>"; };
 		6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQChatViewControllerTableViewController.m; sourceTree = "<group>"; };
+		6654F8DB194473DA0063AE28 /* FQQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQQMessage.h; sourceTree = "<group>"; };
+		6654F8DC194473DA0063AE28 /* FQQMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQQMessage.m; sourceTree = "<group>"; };
 		66AF35B51942F99C00CFA15B /* FQMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMainTabBarController.h; sourceTree = "<group>"; };
 		66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQMainTabBarController.m; sourceTree = "<group>"; };
 		66AF35B81942FB7200CFA15B /* FQMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMessagesViewController.h; sourceTree = "<group>"; };
@@ -213,9 +216,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6654F8DA194473BF0063AE28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6654F8DB194473DA0063AE28 /* FQQMessage.h */,
+				6654F8DC194473DA0063AE28 /* FQQMessage.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		66AF35B31942F92A00CFA15B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6654F8DA194473BF0063AE28 /* Models */,
 				66AF35E719431A6500CFA15B /* Views */,
 				66AF35DB1943073D00CFA15B /* Protocols */,
 				66AF35B41942F96600CFA15B /* Controllers */,
@@ -404,6 +417,7 @@
 			files = (
 				66AF35DF1943105800CFA15B /* FQMessagesTableViewController.m in Sources */,
 				66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */,
+				6654F8DD194473DA0063AE28 /* FQQMessage.m in Sources */,
 				665267091942DEFF00658A16 /* main.m in Sources */,
 				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
 				66AF35E21943184100CFA15B /* FQArrowButton.m in Sources */,
