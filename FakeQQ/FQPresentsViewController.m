@@ -18,10 +18,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIImage* normalImage = [UIImage imageNamed:@"tab_qworld_nor"];
-    UIImage* selectedImage = [UIImage imageNamed:@"tab_qworld_press"];
-    [_tabBarItemPresents setImage:normalImage];
-    [_tabBarItemPresents setSelectedImage:selectedImage];
 }
 
 - (void)didReceiveMemoryWarning

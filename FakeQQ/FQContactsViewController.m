@@ -18,10 +18,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIImage* normalImage = [UIImage imageNamed:@"tab_buddy_nor"];
-    UIImage* selectedImage = [UIImage imageNamed:@"tab_buddy_press"];
-    [_tabBarItemContacts setImage:normalImage];
-    [_tabBarItemContacts setSelectedImage:selectedImage];
 }
 
 - (void)didReceiveMemoryWarning
