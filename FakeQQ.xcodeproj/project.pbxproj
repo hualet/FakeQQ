@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663F845E194F372600BDD712 /* FQChatBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F845D194F372600BDD712 /* FQChatBubbleView.m */; };
+		663F8460194F37AC00BDD712 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F845F194F37AC00BDD712 /* CoreText.framework */; };
 		665266FD1942DEFF00658A16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665266FC1942DEFF00658A16 /* Foundation.framework */; };
 		665266FF1942DEFF00658A16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665266FE1942DEFF00658A16 /* CoreGraphics.framework */; };
 		665267011942DEFF00658A16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665267001942DEFF00658A16 /* UIKit.framework */; };
@@ -62,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		663F845C194F372600BDD712 /* FQChatBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQChatBubbleView.h; sourceTree = "<group>"; };
+		663F845D194F372600BDD712 /* FQChatBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQChatBubbleView.m; sourceTree = "<group>"; };
+		663F845F194F37AC00BDD712 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		665266F91942DEFF00658A16 /* FakeQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665266FC1942DEFF00658A16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		665266FE1942DEFF00658A16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663F8460194F37AC00BDD712 /* CoreText.framework in Frameworks */,
 				665266FF1942DEFF00658A16 /* CoreGraphics.framework in Frameworks */,
 				665267011942DEFF00658A16 /* UIKit.framework in Frameworks */,
 				665266FD1942DEFF00658A16 /* Foundation.framework in Frameworks */,
@@ -148,6 +154,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		663F84ED194F3DE900BDD712 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
 		665266F01942DEFF00658A16 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +183,7 @@
 		665266FB1942DEFF00658A16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				663F845F194F37AC00BDD712 /* CoreText.framework */,
 				665266FC1942DEFF00658A16 /* Foundation.framework */,
 				665266FE1942DEFF00658A16 /* CoreGraphics.framework */,
 				665267001942DEFF00658A16 /* UIKit.framework */,
@@ -181,6 +195,7 @@
 		665267021942DEFF00658A16 /* FakeQQ */ = {
 			isa = PBXGroup;
 			children = (
+				663F84ED194F3DE900BDD712 /* Externals */,
 				66AF35CA1942FF3000CFA15B /* Resources */,
 				66AF35B31942F92A00CFA15B /* Classes */,
 				6652670B1942DEFF00658A16 /* FQAppDelegate.h */,
@@ -306,6 +321,8 @@
 				6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */,
 				66EBE7E4194B393000BA19A1 /* FQStatusNotifications.h */,
 				66EBE7E5194B393000BA19A1 /* FQStatusNotifications.m */,
+				663F845C194F372600BDD712 /* FQChatBubbleView.h */,
+				663F845D194F372600BDD712 /* FQChatBubbleView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -435,6 +452,7 @@
 				6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */,
 				66D1D593194324A9007DA483 /* FQQuickBarItem.m in Sources */,
 				66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */,
+				663F845E194F372600BDD712 /* FQChatBubbleView.m in Sources */,
 				66D1D59019432342007DA483 /* FQQuickBar.m in Sources */,
 				6652670D1942DEFF00658A16 /* FQAppDelegate.m in Sources */,
 				66AF35C91942FBCF00CFA15B /* FQPresentsViewController.m in Sources */,

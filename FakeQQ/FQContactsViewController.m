@@ -7,6 +7,7 @@
 //
 
 #import "FQContactsViewController.h"
+#import "FQChatBubbleView.h"
 
 @interface FQContactsViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    FQChatBubbleView* bubble = [[FQChatBubbleView alloc] initWithFrame:CGRectInset(self.view.frame, 50, 100)];
+    [self.view addSubview:bubble];
 }
 
 - (void)didReceiveMemoryWarning
