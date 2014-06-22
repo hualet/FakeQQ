@@ -10,4 +10,8 @@
 
 @interface FQQMessage : NSObject
 
+@property (nonatomic, readwrite, copy) NSString* message;
+
+- (id)initWithMessage:(NSString*)message;
+
 @end

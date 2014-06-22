@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		663F845E194F372600BDD712 /* FQChatBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F845D194F372600BDD712 /* FQChatBubbleView.m */; };
 		663F8460194F37AC00BDD712 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F845F194F37AC00BDD712 /* CoreText.framework */; };
+		664F21AA1953310000AE7C54 /* FQChatBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 664F21A91953310000AE7C54 /* FQChatBubbleCell.m */; };
+		664F21B019533C8A00AE7C54 /* bubble_incoming@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 664F21AE19533C8A00AE7C54 /* bubble_incoming@2x.png */; };
+		664F21B119533C8A00AE7C54 /* bubble_outgoing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 664F21AF19533C8A00AE7C54 /* bubble_outgoing@2x.png */; };
 		665266FD1942DEFF00658A16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665266FC1942DEFF00658A16 /* Foundation.framework */; };
 		665266FF1942DEFF00658A16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665266FE1942DEFF00658A16 /* CoreGraphics.framework */; };
 		665267011942DEFF00658A16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665267001942DEFF00658A16 /* UIKit.framework */; };
@@ -28,7 +31,7 @@
 		6654F8CC19441C7E0063AE28 /* menu_icon_QR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8C819441C7E0063AE28 /* menu_icon_QR@2x.png */; };
 		6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */; };
 		6654F8D31944536C0063AE28 /* qq_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6654F8D21944536C0063AE28 /* qq_icon@2x.png */; };
-		6654F8D919445EE30063AE28 /* FQChatViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */; };
+		6654F8D919445EE30063AE28 /* FQChatViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8D819445EE30063AE28 /* FQChatViewTableViewController.m */; };
 		6654F8DD194473DA0063AE28 /* FQQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654F8DC194473DA0063AE28 /* FQQMessage.m */; };
 		66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B61942F99C00CFA15B /* FQMainTabBarController.m */; };
 		66AF35BA1942FB7200CFA15B /* FQMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF35B91942FB7200CFA15B /* FQMessagesViewController.m */; };
@@ -67,6 +70,10 @@
 		663F845C194F372600BDD712 /* FQChatBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQChatBubbleView.h; sourceTree = "<group>"; };
 		663F845D194F372600BDD712 /* FQChatBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQChatBubbleView.m; sourceTree = "<group>"; };
 		663F845F194F37AC00BDD712 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		664F21A81953310000AE7C54 /* FQChatBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQChatBubbleCell.h; sourceTree = "<group>"; };
+		664F21A91953310000AE7C54 /* FQChatBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQChatBubbleCell.m; sourceTree = "<group>"; };
+		664F21AE19533C8A00AE7C54 /* bubble_incoming@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_incoming@2x.png"; sourceTree = "<group>"; };
+		664F21AF19533C8A00AE7C54 /* bubble_outgoing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_outgoing@2x.png"; sourceTree = "<group>"; };
 		665266F91942DEFF00658A16 /* FakeQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665266FC1942DEFF00658A16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		665266FE1942DEFF00658A16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,8 +98,8 @@
 		6654F8CD194442A40063AE28 /* FQFriendBriefCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQFriendBriefCell.h; sourceTree = "<group>"; };
 		6654F8CE194442A40063AE28 /* FQFriendBriefCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQFriendBriefCell.m; sourceTree = "<group>"; };
 		6654F8D21944536C0063AE28 /* qq_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq_icon@2x.png"; sourceTree = "<group>"; };
-		6654F8D719445EE30063AE28 /* FQChatViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQChatViewControllerTableViewController.h; sourceTree = "<group>"; };
-		6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQChatViewControllerTableViewController.m; sourceTree = "<group>"; };
+		6654F8D719445EE30063AE28 /* FQChatViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQChatViewTableViewController.h; sourceTree = "<group>"; };
+		6654F8D819445EE30063AE28 /* FQChatViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQChatViewTableViewController.m; sourceTree = "<group>"; };
 		6654F8DB194473DA0063AE28 /* FQQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQQMessage.h; sourceTree = "<group>"; };
 		6654F8DC194473DA0063AE28 /* FQQMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQQMessage.m; sourceTree = "<group>"; };
 		66AF35B51942F99C00CFA15B /* FQMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQMainTabBarController.h; sourceTree = "<group>"; };
@@ -271,8 +278,8 @@
 				66AF35C81942FBCF00CFA15B /* FQPresentsViewController.m */,
 				66AF35DD1943105800CFA15B /* FQMessagesTableViewController.h */,
 				66AF35DE1943105800CFA15B /* FQMessagesTableViewController.m */,
-				6654F8D719445EE30063AE28 /* FQChatViewControllerTableViewController.h */,
-				6654F8D819445EE30063AE28 /* FQChatViewControllerTableViewController.m */,
+				6654F8D719445EE30063AE28 /* FQChatViewTableViewController.h */,
+				6654F8D819445EE30063AE28 /* FQChatViewTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -280,6 +287,8 @@
 		66AF35CA1942FF3000CFA15B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				664F21AE19533C8A00AE7C54 /* bubble_incoming@2x.png */,
+				664F21AF19533C8A00AE7C54 /* bubble_outgoing@2x.png */,
 				66EBE7E7194B43DD00BA19A1 /* prompt@2x.png */,
 				6654F8D21944536C0063AE28 /* qq_icon@2x.png */,
 				6654F8C519441C7E0063AE28 /* menu_icon_camera@2x.png */,
@@ -323,6 +332,8 @@
 				66EBE7E5194B393000BA19A1 /* FQStatusNotifications.m */,
 				663F845C194F372600BDD712 /* FQChatBubbleView.h */,
 				663F845D194F372600BDD712 /* FQChatBubbleView.m */,
+				664F21A81953310000AE7C54 /* FQChatBubbleCell.h */,
+				664F21A91953310000AE7C54 /* FQChatBubbleCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -410,6 +421,7 @@
 				66AF35D81942FF6F00CFA15B /* tab_qworld_press@2x.png in Resources */,
 				6654F8CB19441C7E0063AE28 /* menu_icon_groupaudio@2x.png in Resources */,
 				6654F8CC19441C7E0063AE28 /* menu_icon_QR@2x.png in Resources */,
+				664F21B119533C8A00AE7C54 /* bubble_outgoing@2x.png in Resources */,
 				66AF35D31942FF6F00CFA15B /* tab_buddy_nor@2x.png in Resources */,
 				66AF35D51942FF6F00CFA15B /* tab_me_nor@2x.png in Resources */,
 				66AF35D91942FF6F00CFA15B /* tab_recent_nor@2x.png in Resources */,
@@ -418,6 +430,7 @@
 				66AF35E51943189000CFA15B /* menu_icon_bulb_pressed@2x.png in Resources */,
 				66AF35DA1942FF6F00CFA15B /* tab_recent_press@2x.png in Resources */,
 				6654F8CA19441C7E0063AE28 /* menu_icon_chat@2x.png in Resources */,
+				664F21B019533C8A00AE7C54 /* bubble_incoming@2x.png in Resources */,
 				66AF35D41942FF6F00CFA15B /* tab_buddy_press@2x.png in Resources */,
 				66AF35E61943189000CFA15B /* menu_icon_bulb@2x.png in Resources */,
 				66EBE7E8194B43DD00BA19A1 /* prompt@2x.png in Resources */,
@@ -445,10 +458,11 @@
 				66AF35C31942FBA300CFA15B /* FQMeViewController.m in Sources */,
 				6654F8DD194473DA0063AE28 /* FQQMessage.m in Sources */,
 				665267091942DEFF00658A16 /* main.m in Sources */,
+				664F21AA1953310000AE7C54 /* FQChatBubbleCell.m in Sources */,
 				66AF35C61942FBC600CFA15B /* FQContactsViewController.m in Sources */,
 				66EBE7E6194B393000BA19A1 /* FQStatusNotifications.m in Sources */,
 				66AF35E21943184100CFA15B /* FQArrowButton.m in Sources */,
-				6654F8D919445EE30063AE28 /* FQChatViewControllerTableViewController.m in Sources */,
+				6654F8D919445EE30063AE28 /* FQChatViewTableViewController.m in Sources */,
 				6654F8CF194442A40063AE28 /* FQFriendBriefCell.m in Sources */,
 				66D1D593194324A9007DA483 /* FQQuickBarItem.m in Sources */,
 				66AF35B71942F99C00CFA15B /* FQMainTabBarController.m in Sources */,

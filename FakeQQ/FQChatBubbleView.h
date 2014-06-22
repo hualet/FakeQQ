@@ -10,4 +10,8 @@
 
 @interface FQChatBubbleView : UIView
 
+@property (nonatomic, readwrite, strong) NSString* string;
+
+- (id)initWithString:(NSString*) string;
+
 @end

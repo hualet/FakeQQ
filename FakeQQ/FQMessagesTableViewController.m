@@ -11,7 +11,7 @@
 #import "FQQuickBar.h"
 #import "FQQuickBarItem.h"
 #import "FQFriendBriefCell.h"
-#import "FQChatViewControllerTableViewController.h"
+#import "FQChatViewTableViewController.h"
 
 @interface FQMessagesTableViewController ()
 

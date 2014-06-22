@@ -14,29 +14,37 @@
 #define REGEX_PATTERN_LINKS @"((https?|ftp):\\/\\/)(\\w|\\.)+(:[0-9]+)?(\\/|\\w|\\.|\\?|\\&)"
 #define REGEX_PATTERN_IMGS @"\\[QQ:(.*?)(,width:([0-9]+))?(,height:([0-9]+))?\\]"
 
-@implementation FQChatBubbleView
+@implementation FQChatBubbleView 
 
 static void deallocCallback( void* ref ){
 }
 static CGFloat ascentCallback( void *ref ){
     NSDictionary* dict = (__bridge NSDictionary*)ref;
-    return [[dict objectForKey:@"imageWidth"] floatValue];
+    return [[dict objectForKey:@"imageHeight"] floatValue];
 }
 static CGFloat descentCallback( void *ref ){
     return 0;
 }
 static CGFloat widthCallback( void* ref ){
     NSDictionary* dict = (__bridge NSDictionary*)ref;
-    return [[dict objectForKey:@"imageHeight"] floatValue];
+    return [[dict objectForKey:@"imageWidth"] floatValue];
 }
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithString:(NSString*) string
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:CGRectMake(0, 0, 200, 100)];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor clearColor];
+        
+        self.string = string;
     }
     return self;
+}
+
+-(void)setString:(NSString *)string
+{
+    _string = string;
+    [self setNeedsDisplay];
 }
 
 -(CFMutableAttributedStringRef)processAttributedString:(CFMutableAttributedStringRef)string
@@ -60,11 +68,6 @@ static CGFloat widthCallback( void* ref ){
     // images
     exp = [NSRegularExpression regularExpressionWithPattern:REGEX_PATTERN_IMGS options:NSRegularExpressionCaseInsensitive error:NULL];
     [exp enumerateMatchesInString:destString options:0 range:NSMakeRange(0, destString.length) usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
-        
-        for (int i = 0; i < [result numberOfRanges]; i++) {
-            NSLog(@"%d", i);
-            NSLog(@"%@", [destString substringWithRange:[result rangeAtIndex:i]]);
-        }
         
         NSString* imageName;
         NSInteger imageWidth;
@@ -98,9 +101,6 @@ static CGFloat widthCallback( void* ref ){
 {
     // Initialize a graphics context in iOS.
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextAddRect(context, rect);
-    [[UIColor whiteColor] set];
-    CGContextFillPath(context);
     
     // Flip the context coordinates, in iOS only.
     CGContextTranslateCTM(context, 0, self.bounds.size.height);
@@ -114,11 +114,10 @@ static CGFloat widthCallback( void* ref ){
     CGMutablePathRef path = CGPathCreateMutable();
     
     // In this simple example, initialize a rectangular path.
-    CGRect bounds = CGRectMake(10.0, 10.0, 200.0, 200.0);
-    CGPathAddRect(path, NULL, bounds );
+    CGPathAddRect(path, NULL, rect);
     
     // Initialize a string.
-    CFStringRef textString = CFSTR("Hello, World! http://www.baidu.com I know nothing in the world that has as much power as a word. Sometimes I write one[QQ:qq_icon,width:20,height:20], and I look at it, until it begins to shine.");
+    CFStringRef textString = (__bridge CFStringRef)(_string);
     
     // Create a mutable attributed string with a max length of 0.
     // The max length is a hint as to how much internal storage to reserve.
@@ -160,6 +159,7 @@ static CGFloat widthCallback( void* ref ){
         CGFloat lineLeading;
         //获取每行的宽度和高度
         CTLineGetTypographicBounds(line, &lineAscent, &lineDescent, &lineLeading);
+        
         //获取每个CTRun
         CFArrayRef runs = CTLineGetGlyphRuns(line);
         for (int j = 0; j < CFArrayGetCount(runs); j++) {
@@ -173,18 +173,14 @@ static CGFloat widthCallback( void* ref ){
             //调整CTRun的rect
             runRect.size.width = CTRunGetTypographicBounds(run, CFRangeMake(0,0), &runAscent, &runDescent, NULL);
             
-            runRect=CGRectMake(lineOrigin.x + CTLineGetOffsetForStringIndex(line, CTRunGetStringRange(run).location, NULL), lineOrigin.y - runDescent, runRect.size.width, runAscent + runDescent);
+            runRect=CGRectMake(CTLineGetOffsetForStringIndex(line, CTRunGetStringRange(run).location, NULL), lineOrigin.y, runRect.size.width, runAscent + runDescent);
             
             NSString *imageName = [attributes objectForKey:MY_ATTRIBUTE_NAME];
             //图片渲染逻辑，把需要被图片替换的字符位置画上图片
             if (imageName) {
                 UIImage *image = [UIImage imageNamed:imageName];
                 if (image) {
-                    CGRect imageDrawRect;
-                    imageDrawRect.size = CGSizeMake(30, 30);
-                    imageDrawRect.origin.x = runRect.origin.x + lineOrigin.x;
-                    imageDrawRect.origin.y = lineOrigin.y;
-                    CGContextDrawImage(context, imageDrawRect, image.CGImage);
+                    CGContextDrawImage(context, runRect, image.CGImage);
                 }
             }
         }

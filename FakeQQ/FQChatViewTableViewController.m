@@ -6,20 +6,29 @@
 //  Copyright (c) 2014年 Hualet. All rights reserved.
 //
 
-#import "FQChatViewControllerTableViewController.h"
+#import "FQChatViewTableViewController.h"
+#import "FQQMessage.h"
+#import "FQChatBubbleView.h"
 
-@interface FQChatViewControllerTableViewController ()
 
-@end
-
-@implementation FQChatViewControllerTableViewController
+@implementation FQChatViewTableViewController {
+    UIImage* _incomingBubbleImage;
+    UIImage* _outgoingBubbleImage;
+    UIEdgeInsets _contentInsets;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    _contentInsets = UIEdgeInsetsMake(10, 22, 10, 20);
+    _incomingBubbleImage = [[UIImage imageNamed:@"bubble_incoming"] resizableImageWithCapInsets: _contentInsets resizingMode: UIImageResizingModeStretch];
+    _outgoingBubbleImage = [[UIImage imageNamed:@"bubble_outgoing"] resizableImageWithCapInsets: _contentInsets resizingMode:UIImageResizingModeStretch];
+    
+    self.messages = [NSMutableArray array];
+    [self.messages addObject:[[FQQMessage alloc] initWithMessage:@"Hello, World! http://www.baidu.com I know nothing in the world that has as much power as a word. Sometimes I write one[QQ:qq_icon,width:20,height:20], and I look at it, until it begins to shine."]];
+    [self.messages addObject:[[FQQMessage alloc] initWithMessage:@"Hello, World! http://www.baidu.com I know nothing in the world that has as much power as a word. Sometimes I write one[QQ:qq_icon,width:20,height:20], and I look at it, until it begins to shine."]];
+    [self.messages addObject:[[FQQMessage alloc] initWithMessage:@"Hello, World! http://www.baidu.com I know nothing in the world that has as much power as a word. Sometimes I write one[QQ:qq_icon,width:20,height:20], and I look at it, until it begins to shine."]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,28 +41,36 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [_messages count];
 }
 
-/*
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chat_bubble" forIndexPath:indexPath];
     
-    // Configure the cell...
+    FQQMessage* message = _messages[indexPath.row];
+    
+    UIImageView* backgroundImage = [[UIImageView alloc] initWithImage: _incomingBubbleImage];
+    backgroundImage.frame = CGRectMake(0, 0, 200, 200);
+    
+    FQChatBubbleView* bubble = [[FQChatBubbleView alloc] initWithString:message.message];
+    bubble.frame = UIEdgeInsetsInsetRect(backgroundImage.frame, _contentInsets);
+    
+    [backgroundImage addSubview:bubble];
+    [cell.contentView addSubview:backgroundImage];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

@@ -10,4 +10,13 @@
 
 @implementation FQQMessage
 
+-(id)initWithMessage:(NSString *)message
+{
+    self = [super init];
+    if (self) {
+        self.message = message;
+    }
+    return self;
+}
+
 @end
