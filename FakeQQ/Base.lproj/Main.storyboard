@@ -84,6 +84,7 @@
                             <outlet property="delegate" destination="HqM-Gs-NC9" id="CSe-3F-89D"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="vdX-VF-e7c"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwg-hb-IpF" userLabel="First Responder" sceneMemberID="firstResponder"/>

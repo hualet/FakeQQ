@@ -30,24 +30,35 @@ static CGFloat widthCallback( void* ref ){
     return [[dict objectForKey:@"imageWidth"] floatValue];
 }
 
-- (id)initWithString:(NSString*) string
+#pragma mark - class methods
++ (CGSize)suggestedSizeConstrainedToSize:(CGSize)size WithString:(NSString *)string
 {
-    self = [super initWithFrame:CGRectMake(0, 0, 200, 100)];
-    if (self) {
-        self.backgroundColor = [UIColor clearColor];
-        
-        self.string = string;
-    }
-    return self;
+    CFStringRef textString = (__bridge CFStringRef)(string);
+    
+    CFMutableAttributedStringRef attrString =
+    CFAttributedStringCreateMutable(kCFAllocatorDefault, 0);
+    
+    CFAttributedStringReplaceString (attrString, CFRangeMake(0, 0),
+                                     textString);
+    
+    [FQChatBubbleView processAttributedString:attrString];
+    
+    // Create the framesetter with the attributed string.
+    CTFramesetterRef framesetter =
+    CTFramesetterCreateWithAttributedString(attrString);
+    
+    CGSize suggestedSize;
+	suggestedSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0, 0), NULL, size, NULL);
+	suggestedSize = CGSizeMake(ceilf(suggestedSize.width), ceilf(suggestedSize.height));
+    return suggestedSize;
+    
+    CFRelease(attrString);
+    CFRelease(framesetter);
+    
+    return suggestedSize;
 }
 
--(void)setString:(NSString *)string
-{
-    _string = string;
-    [self setNeedsDisplay];
-}
-
--(CFMutableAttributedStringRef)processAttributedString:(CFMutableAttributedStringRef)string
++ (CFMutableAttributedStringRef)processAttributedString:(CFMutableAttributedStringRef)string
 {
     NSMutableAttributedString* str = (__bridge NSMutableAttributedString*)string;
     NSString* destString = str.mutableString;
@@ -97,6 +108,23 @@ static CGFloat widthCallback( void* ref ){
     return string;
 }
 
+- (id)initWithString:(NSString*) string
+{
+    self = [super initWithFrame:CGRectMake(0, 0, 200, 100)];
+    if (self) {
+        self.backgroundColor = [UIColor clearColor];
+        
+        self.string = string;
+    }
+    return self;
+}
+
+-(void)setString:(NSString *)string
+{
+    _string = string;
+    [self setNeedsDisplay];
+}
+
 -(void)drawRect:(CGRect)rect
 {
     // Initialize a graphics context in iOS.
@@ -132,7 +160,7 @@ static CGFloat widthCallback( void* ref ){
     CFAttributedStringSetAttribute(attrString, CFRangeMake(0, CFAttributedStringGetLength(attrString)),
                                    kCTForegroundColorAttributeName, [UIColor blackColor].CGColor);
     
-    [self processAttributedString:attrString];
+    [FQChatBubbleView processAttributedString:attrString];
     
     // Create the framesetter with the attributed string.
     CTFramesetterRef framesetter =

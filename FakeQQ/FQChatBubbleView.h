@@ -12,6 +12,8 @@
 
 @property (nonatomic, readwrite, strong) NSString* string;
 
++ (CGSize)suggestedSizeConstrainedToSize:(CGSize)size WithString:(NSString*)string;
+
 - (id)initWithString:(NSString*) string;
 
 @end
